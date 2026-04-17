@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aadi Fitness Store — Premium gym accessories, fitness equipment and lifestyle products. Shop high-performance gear in Rawalpindi, Pakistan." />
+  <meta name="keywords" content="fitness store, gym accessories, workout gear, protein, resistance bands, Rawalpindi, Pakistan" />
+  <meta property="og:title" content="Aadi Fitness Store | Premium Fitness Gear" />
+  <meta property="og:description" content="Shop elite fitness products. Fuel your transformation today." />
+  <title>Aadi Fitness Store | Premium Gym & Lifestyle Gear</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar" role="banner">
+    <iconify-icon icon="mdi:lightning-bolt" aria-hidden="true"></iconify-icon>
+    FREE DELIVERY on orders above Rs. 2,500 &nbsp;|&nbsp; Limited Stock Available — Order Now!
+    <iconify-icon icon="mdi:lightning-bolt" aria-hidden="true"></iconify-icon>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Aadi Fitness Store Home">
+        <span class="logo-aadi">AADI</span>
+        <span class="logo-fitness">FITNESS STORE</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-links" class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#hero"         class="nav-link">Home</a>
+        <a href="#products"     class="nav-link">Products</a>
+        <a href="#why-us"       class="nav-link">Why Us</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#order"        class="nav-link">Order</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://wa.me/923139424383" target="_blank" rel="noopener noreferrer" class="btn btn-wa nav-cta" aria-label="Order via WhatsApp">
+          <iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon>
+          Order on WhatsApp
+        </a>
+        <button class="cart-btn" aria-label="Shopping cart" id="cart-btn">
+          <iconify-icon icon="mdi:cart" aria-hidden="true"></iconify-icon>
+          <span class="cart-count" id="cart-count" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Hero — Aadi Fitness Store">
+      <!-- Dynamic frame-sequence background -->
+      <div class="hero-img-bg" aria-hidden="true">
+        <canvas id="hero-seq-canvas"></canvas>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Particle Canvas -->
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+      <!-- Glow accent -->
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <iconify-icon icon="mdi:lightning-bolt" aria-hidden="true"></iconify-icon>
+          Premium Fitness Gear — Pakistan's #1 Store
+        </div>
+
+        <h1 class="hero-title">
+          FUEL YOUR<br>
+          <span class="text-grad">TRANSFORMATION</span>
+        </h1>
+
+        <p class="hero-sub">
+          Elite fitness equipment, premium gym accessories and performance lifestyle gear.
+          Built for athletes who demand the best. Delivered fast across Pakistan.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary btn-large" id="hero-shop-btn">
+            <iconify-icon icon="mdi:cart" aria-hidden="true"></iconify-icon>
+            Shop Now
+          </a>
+          <a href="#order" class="btn btn-ghost btn-large" id="hero-order-btn">
+            <iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon>
+            Order via WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item"><iconify-icon icon="mdi:truck-fast"   aria-hidden="true"></iconify-icon> Fast Nationwide Delivery</div>
+          <div class="trust-item"><iconify-icon icon="mdi:shield-check" aria-hidden="true"></iconify-icon> 100% Authentic Products</div>
+          <div class="trust-item"><iconify-icon icon="mdi:refresh"      aria-hidden="true"></iconify-icon> Easy 7-Day Returns</div>
+          <div class="trust-item"><iconify-icon icon="mdi:star"         aria-hidden="true"></iconify-icon> 2,000+ Happy Customers</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <div class="marquee-item">STRENGTH TRAINING</div><div class="marquee-dot"></div>
+          <div class="marquee-item">FAT LOSS</div><div class="marquee-dot"></div>
+          <div class="marquee-item">MUSCLE GAIN</div><div class="marquee-dot"></div>
+          <div class="marquee-item">ELITE GEAR</div><div class="marquee-dot"></div>
+          <div class="marquee-item">PREMIUM QUALITY</div><div class="marquee-dot"></div>
+          <div class="marquee-item">FAST DELIVERY</div><div class="marquee-dot"></div>
+          <div class="marquee-item">TRANSFORMATION</div><div class="marquee-dot"></div>
+          <div class="marquee-item">PERFORMANCE</div><div class="marquee-dot"></div>
+          <!-- Duplicate -->
+          <div class="marquee-item">STRENGTH TRAINING</div><div class="marquee-dot"></div>
+          <div class="marquee-item">FAT LOSS</div><div class="marquee-dot"></div>
+          <div class="marquee-item">MUSCLE GAIN</div><div class="marquee-dot"></div>
+          <div class="marquee-item">ELITE GEAR</div><div class="marquee-dot"></div>
+          <div class="marquee-item">PREMIUM QUALITY</div><div class="marquee-dot"></div>
+          <div class="marquee-item">FAST DELIVERY</div><div class="marquee-dot"></div>
+          <div class="marquee-item">TRANSFORMATION</div><div class="marquee-dot"></div>
+          <div class="marquee-item">PERFORMANCE</div><div class="marquee-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="section products" id="products" aria-label="Our Products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><iconify-icon icon="mdi:dumbbell" aria-hidden="true"></iconify-icon> Featured Products</span>
+          <h2 class="section-title">Elite Gear for <span class="text-grad">Elite Athletes</span></h2>
+          <p class="section-sub">Every product is hand-picked for maximum performance, durability, and results. Don't settle for less.</p>
+        </div>
+        <div class="products-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&auto=format&fit=crop&q=80" alt="Premium Adjustable Dumbbells for strength training" class="product-img" loading="lazy" width="600" height="450" />
+              <div class="product-badges">
+                <span class="badge badge-hot">HOT</span>
+                <span class="badge badge-sale">-25% OFF</span>
+              </div>
+              <div class="product-quick">
+                <button class="btn btn-primary btn-full add-to-cart" data-product="Adjustable Dumbbells Set">
+                  <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Aadi Fitness</div>
+              <div class="product-name">Adjustable Dumbbells Set (5–30kg)</div>
+              <div class="product-benefit">Space-saving, precision-weighted set for muscle building & toning. Commercial-grade steel. Rubber-coated ends.</div>
+              <div class="product-price-row">
+                <div class="product-price">Rs. 8,999</div>
+                <div class="product-price-old">Rs. 11,999</div>
+              </div>
+              <button class="btn btn-primary product-cta add-to-cart" data-product="Adjustable Dumbbells Set" id="add-dumbbells">
+                <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Order Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop&q=80" alt="Premium Resistance Bands for full body workout" class="product-img" loading="lazy" width="600" height="450" />
+              <div class="product-badges">
+                <span class="badge badge-new">NEW</span>
+              </div>
+              <div class="product-quick">
+                <button class="btn btn-primary btn-full add-to-cart" data-product="Resistance Bands Set (5-Pack)">
+                  <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Aadi Fitness</div>
+              <div class="product-name">Resistance Bands Set (5-Pack)</div>
+              <div class="product-benefit">Versatile full-body workout solution. Latex-free, anti-snap elastic. Ideal for home, gym, yoga & rehabilitation.</div>
+              <div class="product-price-row">
+                <div class="product-price">Rs. 1,899</div>
+                <div class="product-price-old">Rs. 2,499</div>
+              </div>
+              <button class="btn btn-primary product-cta add-to-cart" data-product="Resistance Bands Set (5-Pack)" id="add-bands">
+                <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Order Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=600&auto=format&fit=crop&q=80" alt="Premium gym shaker bottle" class="product-img" loading="lazy" width="600" height="450" />
+              <div class="product-badges">
+                <span class="badge badge-sale">BEST SELLER</span>
+              </div>
+              <div class="product-quick">
+                <button class="btn btn-primary btn-full add-to-cart" data-product="Premium Shaker Bottle 700ml">
+                  <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Aadi Fitness</div>
+              <div class="product-name">Premium Shaker Bottle 700ml</div>
+              <div class="product-benefit">Leak-proof, BPA-free, mesh ball for clump-free protein shakes. Perfect for gym, office & on-the-go athletes.</div>
+              <div class="product-price-row">
+                <div class="product-price">Rs. 699</div>
+                <div class="product-price-old">Rs. 999</div>
+              </div>
+              <button class="btn btn-primary product-cta add-to-cart" data-product="Premium Shaker Bottle 700ml" id="add-shaker">
+                <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Order Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=600&auto=format&fit=crop&q=80" alt="Non-slip yoga and workout mat" class="product-img" loading="lazy" width="600" height="450" />
+              <div class="product-badges">
+                <span class="badge badge-hot">HOT</span>
+              </div>
+              <div class="product-quick">
+                <button class="btn btn-primary btn-full add-to-cart" data-product="Anti-Slip Exercise Mat (6mm)">
+                  <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Aadi Fitness</div>
+              <div class="product-name">Anti-Slip Exercise Mat (6mm)</div>
+              <div class="product-benefit">Extra-thick 6mm EVA foam, sweat-resistant surface. Perfect for HIIT, yoga, stretching & home workouts.</div>
+              <div class="product-price-row">
+                <div class="product-price">Rs. 1,499</div>
+                <div class="product-price-old">Rs. 2,199</div>
+              </div>
+              <button class="btn btn-primary product-cta add-to-cart" data-product="Anti-Slip Exercise Mat (6mm)" id="add-mat">
+                <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Order Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&auto=format&fit=crop&q=80" alt="Heavy duty gym gloves for weightlifting" class="product-img" loading="lazy" width="600" height="450" />
+              <div class="product-badges">
+                <span class="badge badge-new">NEW</span>
+                <span class="badge badge-sale">-20% OFF</span>
+              </div>
+              <div class="product-quick">
+                <button class="btn btn-primary btn-full add-to-cart" data-product="Pro Grip Gym Gloves">
+                  <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Aadi Fitness</div>
+              <div class="product-name">Pro Grip Gym Gloves</div>
+              <div class="product-benefit">Padded palm, breathable mesh back, adjustable wrist strap. Eliminate calluses & maximise lifting grip strength.</div>
+              <div class="product-price-row">
+                <div class="product-price">Rs. 1,199</div>
+                <div class="product-price-old">Rs. 1,499</div>
+              </div>
+              <button class="btn btn-primary product-cta add-to-cart" data-product="Pro Grip Gym Gloves" id="add-gloves">
+                <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Order Now
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=600&auto=format&fit=crop&q=80" alt="Smart jump rope for cardio and fitness" class="product-img" loading="lazy" width="600" height="450" />
+              <div class="product-badges">
+                <span class="badge badge-sale">LIMITED</span>
+              </div>
+              <div class="product-quick">
+                <button class="btn btn-primary btn-full add-to-cart" data-product="Smart Speed Jump Rope">
+                  <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Aadi Fitness</div>
+              <div class="product-name">Smart Speed Jump Rope</div>
+              <div class="product-benefit">Ball-bearing speed handles, adjustable cable, counter grip. Burns 1,000+ calories/hour. Jump into elite cardio.</div>
+              <div class="product-price-row">
+                <div class="product-price">Rs. 899</div>
+                <div class="product-price-old">Rs. 1,299</div>
+              </div>
+              <button class="btn btn-primary product-cta add-to-cart" data-product="Smart Speed Jump Rope" id="add-rope">
+                <iconify-icon icon="mdi:cart-plus" aria-hidden="true"></iconify-icon> Order Now
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS STRIP ===== -->
+    <div class="stats-strip" aria-label="Our achievements">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num" data-counter data-target="2000" data-suffix="+">2000+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-counter data-target="50" data-suffix="+">50+</div>
+            <div class="stat-label">Premium Products</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-counter data-target="98" data-suffix="%">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-counter data-target="3" data-suffix=" Days">3 Days</div>
+            <div class="stat-label">Average Delivery Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section" id="why-us" aria-label="Why choose Aadi Fitness Store">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Aadi Fitness</span>
+          <h2 class="section-title">Built for <span class="text-grad">Serious Athletes</span></h2>
+          <p class="section-sub">We don't just sell products — we deliver performance. Here's why 2,000+ customers trust us.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"><iconify-icon icon="mdi:medal" aria-hidden="true"></iconify-icon></div>
+            <h3>Elite Quality</h3>
+            <p>Every product passes strict quality checks. Only premium-grade materials make it into our store — we never compromise.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><iconify-icon icon="mdi:truck-fast" aria-hidden="true"></iconify-icon></div>
+            <h3>Fast Delivery</h3>
+            <p>Orders dispatched within 24 hours. Delivery across all of Pakistan in 2–4 business days with tracking updates.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><iconify-icon icon="mdi:shield-check" aria-hidden="true"></iconify-icon></div>
+            <h3>30-Day Guarantee</h3>
+            <p>Not satisfied? Return it within 30 days for a full refund or replacement. Zero questions, zero hassle.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><iconify-icon icon="mdi:headset" aria-hidden="true"></iconify-icon></div>
+            <h3>Expert Support</h3>
+            <p>Our fitness-trained team is available 7 days a week via WhatsApp to help you choose the right gear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials" id="testimonials" aria-label="Customer reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon> Real Results</span>
+          <h2 class="section-title">Customers Who <span class="text-grad">Transformed</span></h2>
+          <p class="section-sub">From fat loss to muscle gain — here's what real customers say about our products.</p>
+        </div>
+        <div class="t-grid">
+          <div class="t-card">
+            <div class="stars" aria-label="5 stars">
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+            </div>
+            <p class="t-text">"The adjustable dumbbells from Aadi Fitness completely transformed my home workouts. Build quality is insane — feels like commercial gym equipment. Lost 12kg in 3 months using these daily!"</p>
+            <div class="t-result"><iconify-icon icon="mdi:trending-down" aria-hidden="true"></iconify-icon> Lost 12kg in 3 months</div>
+            <div class="t-author">
+              <div class="t-avatar">AK</div>
+              <div>
+                <strong>Ali Khan</strong>
+                <span>Lahore, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card">
+            <div class="stars" aria-label="5 stars">
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+            </div>
+            <p class="t-text">"Ordered the full resistance band set and gloves. Delivery was super fast — arrived in 2 days to Rawalpindi! Amazing quality, packaging was premium. 100% recommend to anyone starting their fitness journey."</p>
+            <div class="t-result"><iconify-icon icon="mdi:arm-flex" aria-hidden="true"></iconify-icon> +8kg Muscle in 4 months</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#ff6b35,#ffe600)">FR</div>
+              <div>
+                <strong>Fatima Raza</strong>
+                <span>Rawalpindi, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card">
+            <div class="stars" aria-label="5 stars">
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+              <iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon>
+            </div>
+            <p class="t-text">"Best fitness store in Pakistan hands down. The jump rope and mat combo is perfect for my HIIT sessions. Customer support on WhatsApp was incredibly helpful in choosing the right sizes. Will order again!"</p>
+            <div class="t-result"><iconify-icon icon="mdi:fire" aria-hidden="true"></iconify-icon> 15% body fat reduction</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#8b5cf6,#c084fc)">UM</div>
+              <div>
+                <strong>Usman Mirza</strong>
+                <span>Islamabad, Pakistan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ORDER FORM ===== -->
+    <section class="section order-section" id="order" aria-label="Place your order">
+      <div class="order-bg-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> WhatsApp Order</span>
+          <h2 class="section-title">Order in <span class="text-grad">60 Seconds</span></h2>
+          <p class="section-sub">Fill in your details and we'll open WhatsApp with your order pre-filled. Fast, simple, done.</p>
+        </div>
+        <div class="order-grid">
+          <!-- Perks -->
+          <div class="order-info">
+            <div class="order-perks">
+              <div class="order-perk">
+                <div class="perk-icon"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon></div>
+                <div>
+                  <strong>Order via WhatsApp</strong>
+                  <p>Your order details are sent directly to WhatsApp — no accounts, no complicated checkout.</p>
+                </div>
+              </div>
+              <div class="order-perk">
+                <div class="perk-icon"><iconify-icon icon="mdi:truck-check" aria-hidden="true"></iconify-icon></div>
+                <div>
+                  <strong>Cash on Delivery Available</strong>
+                  <p>Pay when your order arrives. No advance payment required on most products.</p>
+                </div>
+              </div>
+              <div class="order-perk">
+                <div class="perk-icon"><iconify-icon icon="mdi:clock-fast" aria-hidden="true"></iconify-icon></div>
+                <div>
+                  <strong>Confirmed in Minutes</strong>
+                  <p>Our team confirms your order and dispatches within 24 hours of placement.</p>
+                </div>
+              </div>
+              <div class="order-perk">
+                <div class="perk-icon"><iconify-icon icon="mdi:shield-star" aria-hidden="true"></iconify-icon></div>
+                <div>
+                  <strong>30-Day Return Guarantee</strong>
+                  <p>Unhappy with your order? Full refund or replacement within 30 days.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="order-form-box">
+            <div class="order-form-title">
+              <iconify-icon icon="mdi:clipboard-text" aria-hidden="true"></iconify-icon>
+              Place Your Order
+            </div>
+            <form class="o-form" id="order-form" novalidate aria-label="Order form">
+              <div class="f-group">
+                <label for="of-name">Full Name *</label>
+                <input type="text" id="of-name" name="name" placeholder="Your full name" required autocomplete="name" />
+              </div>
+              <div class="f-group">
+                <label for="of-phone">WhatsApp / Phone *</label>
+                <input type="tel" id="of-phone" name="phone" placeholder="+92 3XX XXX XXXX" required autocomplete="tel" />
+              </div>
+              <div class="f-group">
+                <label for="of-address">Delivery Address *</label>
+                <input type="text" id="of-address" name="address" placeholder="City, Street, House No." required autocomplete="street-address" />
+              </div>
+              <div class="f-group">
+                <label for="of-product">Select Product *</label>
+                <select id="of-product" name="product" required>
+                  <option value="" disabled selected>Choose a product…</option>
+                  <option value="Adjustable Dumbbells Set (5–30kg) — Rs. 8,999">Adjustable Dumbbells Set — Rs. 8,999</option>
+                  <option value="Resistance Bands Set 5-Pack — Rs. 1,899">Resistance Bands Set (5-Pack) — Rs. 1,899</option>
+                  <option value="Premium Shaker Bottle 700ml — Rs. 699">Premium Shaker Bottle 700ml — Rs. 699</option>
+                  <option value="Anti-Slip Exercise Mat 6mm — Rs. 1,499">Anti-Slip Exercise Mat (6mm) — Rs. 1,499</option>
+                  <option value="Pro Grip Gym Gloves — Rs. 1,199">Pro Grip Gym Gloves — Rs. 1,199</option>
+                  <option value="Smart Speed Jump Rope — Rs. 899">Smart Speed Jump Rope — Rs. 899</option>
+                  <option value="Custom Bundle — to be discussed">Custom Bundle (discuss via WhatsApp)</option>
+                </select>
+              </div>
+              <div class="f-group">
+                <label for="of-qty">Quantity</label>
+                <select id="of-qty" name="qty">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5+</option>
+                </select>
+              </div>
+              <div class="f-group">
+                <label for="of-note">Special Instructions (Optional)</label>
+                <input type="text" id="of-note" name="note" placeholder="e.g., Size, colour preference, gift wrapping…" />
+              </div>
+              <div class="f-urgency">
+                <iconify-icon icon="mdi:alert-circle" aria-hidden="true"></iconify-icon>
+                <strong>Limited Stock!</strong> &nbsp;Only a few units remaining. Order now to guarantee your slot.
+              </div>
+              <button type="submit" class="btn btn-wa btn-full btn-large" id="order-submit-btn">
+                <iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon>
+                Confirm Order on WhatsApp
+              </button>
+              <p style="font-size:0.78rem;color:var(--faint);text-align:center;margin-top:8px">
+                You'll be redirected to WhatsApp to confirm your order. We reply instantly.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq" style="background:var(--bg2)" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Got <span class="text-grad">Questions?</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q"><h4>Do you offer Cash on Delivery?</h4><div class="faq-icon"><iconify-icon icon="mdi:chevron-down" aria-hidden="true"></iconify-icon></div></div>
+            <div class="faq-a"><p>Yes! Cash on Delivery is available across all major cities in Pakistan. Simply place your order via our form or WhatsApp and our team will confirm the details. No advance payment required on most products.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><h4>How long does delivery take?</h4><div class="faq-icon"><iconify-icon icon="mdi:chevron-down" aria-hidden="true"></iconify-icon></div></div>
+            <div class="faq-a"><p>Standard delivery across Pakistan takes 2–4 business days after order confirmation. Same-city orders (Rawalpindi/Islamabad) may arrive within 24–48 hours. We'll send you tracking information once dispatched.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><h4>Are your products authentic and high quality?</h4><div class="faq-icon"><iconify-icon icon="mdi:chevron-down" aria-hidden="true"></iconify-icon></div></div>
+            <div class="faq-a"><p>Absolutely. We source directly from verified suppliers and quality-check every product before it's listed. All our fitness gear is built to commercial-grade standards. We back every purchase with our 30-day satisfaction guarantee.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><h4>What is your return and refund policy?</h4><div class="faq-icon"><iconify-icon icon="mdi:chevron-down" aria-hidden="true"></iconify-icon></div></div>
+            <div class="faq-a"><p>We offer a 30-day hassle-free return policy. If you're not 100% satisfied, contact us via WhatsApp and we'll arrange a replacement or full refund. Items must be unused and in original packaging.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><h4>Do you offer discounts on bulk orders?</h4><div class="faq-icon"><iconify-icon icon="mdi:chevron-down" aria-hidden="true"></iconify-icon></div></div>
+            <div class="faq-a"><p>Yes! We offer special pricing for gyms, fitness trainers, and bulk buyers. Contact us directly on WhatsApp at +92 313 942 4383 or email adnanali456256@gmail.com to discuss your requirements.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><h4>Which products are best for beginners?</h4><div class="faq-icon"><iconify-icon icon="mdi:chevron-down" aria-hidden="true"></iconify-icon></div></div>
+            <div class="faq-a"><p>We recommend starting with our Resistance Bands Set, Exercise Mat, and Jump Rope — perfect for building fitness at home without needing a gym membership. Our team can guide you on the right starter kit via WhatsApp.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact-section" id="contact" aria-label="Contact Aadi Fitness Store">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">We're Always <span class="text-grad">Here for You</span></h2>
+          <p class="section-sub">Questions about products, orders, or fitness advice? Reach us instantly — we typically reply within minutes.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="c-details">
+            <a href="https://wa.me/923139424383" target="_blank" rel="noopener noreferrer" class="c-detail-item" id="contact-wa">
+              <div class="c-det-icon wa-icon"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon></div>
+              <div><strong>WhatsApp (Preferred)</strong><span>+92 313 942 4383</span><span style="font-size:0.75rem;color:var(--faint)">Fastest response — replies within minutes</span></div>
+            </a>
+            <a href="tel:+923139424383" class="c-detail-item" id="contact-phone">
+              <div class="c-det-icon"><iconify-icon icon="mdi:phone" aria-hidden="true"></iconify-icon></div>
+              <div><strong>Call Us</strong><span>+92 313 942 4383</span><span style="font-size:0.75rem;color:var(--faint)">Mon–Sat, 9am–9pm PKT</span></div>
+            </a>
+            <a href="mailto:adnanali456256@gmail.com" class="c-detail-item" id="contact-email">
+              <div class="c-det-icon"><iconify-icon icon="mdi:email" aria-hidden="true"></iconify-icon></div>
+              <div><strong>Email</strong><span>adnanali456256@gmail.com</span></div>
+            </a>
+            <div class="c-detail-item">
+              <div class="c-det-icon"><iconify-icon icon="mdi:map-marker" aria-hidden="true"></iconify-icon></div>
+              <div><strong>Store Location</strong><span>Grija Road, Dhok Syedan, Street 1</span><span>Rawalpindi, Pakistan</span></div>
+            </div>
+            <div style="margin-top:8px">
+              <p style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--faint);font-weight:700;margin-bottom:12px">Follow Us</p>
+              <div class="social-links">
+                <a href="https://www.facebook.com/share/1CbvX3BR3H/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="soc-btn fb" id="soc-fb">
+                  <iconify-icon icon="mdi:facebook" aria-hidden="true"></iconify-icon> Facebook
+                </a>
+                <a href="https://instagram.com/asthetic_aadi_10" target="_blank" rel="noopener noreferrer" class="soc-btn ig" id="soc-ig">
+                  <iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon> Instagram
+                </a>
+                <a href="https://wa.me/923139424383" target="_blank" rel="noopener noreferrer" class="soc-btn wa" id="soc-wa">
+                  <iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> WhatsApp
+                </a>
+                <a href="https://www.tiktok.com/@aadifitness0?_r=1&_t=ZN-95acvNms2p4" target="_blank" rel="noopener noreferrer" class="soc-btn tt" id="soc-tt">
+                  <iconify-icon icon="ic:baseline-tiktok" aria-hidden="true"></iconify-icon> TikTok
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Order Prompt -->
+          <div>
+            <div style="background:var(--grad-dark);border:1px solid var(--border);border-radius:var(--r-xl);padding:var(--sp6);text-align:center;display:flex;flex-direction:column;align-items:center;gap:var(--sp4)">
+              <div style="width:88px;height:88px;border-radius:50%;background:rgba(0,255,136,0.1);border:2px solid rgba(0,255,136,0.3);display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--green)">
+                <iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon>
+              </div>
+              <h3 style="font-size:1.5rem;text-transform:uppercase;letter-spacing:0.04em">Chat with Us<br><span class="text-grad">on WhatsApp</span></h3>
+              <p>Order products, ask about stock, get fitness advice — we're available 7 days a week. Usually reply in under 5 minutes!</p>
+              <a href="https://wa.me/923139424383?text=Hi%20Aadi%20Fitness%20Store!%20I%20want%20to%20order%20some%20products.%20Please%20help%20me." target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-large" id="contact-wa-btn">
+                <iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon>
+                Open WhatsApp Chat
+              </a>
+              <p style="font-size:0.8rem;color:var(--faint)">
+                <iconify-icon icon="mdi:shield-check" style="color:var(--green)" aria-hidden="true"></iconify-icon>
+                100% secure &nbsp;•&nbsp; No spam &nbsp;•&nbsp; Instant support
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-aadi">AADI</span>
+            <span class="logo-fitness">FITNESS STORE</span>
+          </a>
+          <p>Pakistan's premium destination for elite fitness gear, gym accessories, and high-performance lifestyle products. Transform your body with quality you can trust.</p>
+          <div class="f-socials">
+            <a href="https://www.facebook.com/share/1CbvX3BR3H/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="f-soc fb" aria-label="Facebook"><iconify-icon icon="mdi:facebook" aria-hidden="true"></iconify-icon></a>
+            <a href="https://instagram.com/asthetic_aadi_10" target="_blank" rel="noopener noreferrer" class="f-soc ig" aria-label="Instagram"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></a>
+            <a href="https://wa.me/923139424383" target="_blank" rel="noopener noreferrer" class="f-soc wa" aria-label="WhatsApp"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon></a>
+            <a href="https://www.tiktok.com/@aadifitness0?_r=1&_t=ZN-95acvNms2p4" target="_blank" rel="noopener noreferrer" class="f-soc tt" aria-label="TikTok"><iconify-icon icon="ic:baseline-tiktok" aria-hidden="true"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="f-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#products">Dumbbells & Weights</a></li>
+              <li><a href="#products">Resistance Bands</a></li>
+              <li><a href="#products">Shaker Bottles</a></li>
+              <li><a href="#products">Exercise Mats</a></li>
+              <li><a href="#products">Gym Gloves</a></li>
+              <li><a href="#products">Jump Ropes</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Store</h4>
+            <ul>
+              <li><a href="#why-us">Why Aadi Fitness</a></li>
+              <li><a href="#testimonials">Customer Reviews</a></li>
+              <li><a href="#order">Place an Order</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="https://wa.me/923139424383" target="_blank" rel="noopener noreferrer">+92 313 942 4383</a></li>
+              <li><a href="mailto:adnanali456256@gmail.com">adnanali456256@gmail.com</a></li>
+              <li>Grija Road, Dhok Syedan<br>Street 1, Rawalpindi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Aadi Fitness Store. All rights reserved. Built for champions.</p>
+        <div class="f-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="back-top" aria-label="Back to top">
+    <iconify-icon icon="mdi:chevron-up" aria-hidden="true"></iconify-icon>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
